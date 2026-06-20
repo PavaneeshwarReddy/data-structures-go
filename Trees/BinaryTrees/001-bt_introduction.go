@@ -20,11 +20,19 @@ type BinaryTreeInterface interface {
 	PreorderTraversal(node *Node)
 	InorderTraversal(node *Node)
 	PostorderTraversal(node *Node)
-	LevelorderTraversal(node *Node)
+	LevelorderTraversal(nodes []*Node)
 	PreorderIterative()
 	InorderIterative()
-	PostorderIterative()
+	PostorderTraversalOneStack()
+	PostordrerIterativeTwoStacks()
 	AllTraversal()
+
+	// views
+	LeftView()
+	RightView()
+	TopView()
+	BottomView()
+	VerticalOrderTraversal() [][]int
 
 	// Problems
 	MaxDepth(node *Node, depth int) int
@@ -34,6 +42,19 @@ type BinaryTreeInterface interface {
 	CheckSimilarity(root1 *Node, root2 *Node) bool
 	SpiralTraversal()
 	BoundaryTraversal()
+	Symmetric() bool
+	LCA(p *Node, q *Node)
+	FindDistanceKNodes(target *Node, k int) []int
+	ChildrenSumProperty()
+	MaxWidth() int
+	CountNodes() int
+	ConstructPreIn(preorder []int, inorder []int) *Node
+	ConstructInPos(postorder []int, inorder []int) *Node
+	FlattenTree()
+	MinTimeToBurn(target *Node) int
+	MorrisPreorder() []int
+	MorrisInorder() []int
+	RootToLeafPath(key int)
 }
 
 func (bt *BinaryTree) InsertRoot(value int) {
