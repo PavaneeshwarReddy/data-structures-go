@@ -23,7 +23,7 @@ func (cmh *StudentMinHeap) Insert(node Student) {
 		parentIdx := (idx - 1) / 2
 
 		if parentIdx >= 0 && cmh.nodes[parentIdx].Score > cmh.nodes[idx].Score {
-			cmh.nodes[parentIdx].Score, cmh.nodes[idx].Score = cmh.nodes[idx].Score, cmh.nodes[parentIdx].Score
+			cmh.nodes[parentIdx], cmh.nodes[idx] = cmh.nodes[idx], cmh.nodes[parentIdx]
 		}
 
 		idx = parentIdx
@@ -51,7 +51,7 @@ func (cmh *StudentMinHeap) Pop() Student {
 		}
 
 		if smallest != idx {
-			cmh.nodes[smallest].Score, cmh.nodes[idx].Score = cmh.nodes[idx].Score, cmh.nodes[smallest].Score
+			cmh.nodes[smallest], cmh.nodes[idx] = cmh.nodes[idx], cmh.nodes[smallest]
 			idx = smallest
 		} else {
 			break
