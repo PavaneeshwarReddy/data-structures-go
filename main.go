@@ -1,15 +1,13 @@
 package main
 
 import (
-	sortings "dsa-go/Sortings"
+	heaps "dsa-go/Heaps"
 	"fmt"
 )
 
 func main() {
 
-	arr := []int{1, 2, -3, 100}
-	sortings.QuickSort(arr)
-
-	fmt.Printf("%v", arr)
+	arr := []int{6, 5, 3, 2, 8, 10, 9}
+	fmt.Println(heaps.SortKSortedArr(arr, 3))
 
 }
