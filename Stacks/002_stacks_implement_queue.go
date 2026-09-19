@@ -11,12 +11,6 @@ type MyQueue struct {
 	Elements []int
 }
 
-func Constructor() MyQueue {
-	return MyQueue{
-		Elements: []int{},
-	}
-}
-
 func (this *MyQueue) Push(x int) {
 	newStack := []int{}
 	n := len(this.Elements)
