@@ -3,6 +3,8 @@ package arrays
 /*
 Subarray Sum Max
 - If sum goes negative don't carry the sum.
+
+- You need no choose any element here, if it goes negative we can ignore
 */
 
 import "math"

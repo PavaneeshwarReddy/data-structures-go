@@ -23,7 +23,7 @@ func FindLongestSubarray(nums []int, k int) int {
 		leftOverSum := sum - k
 
 		if val, ok := prefSum[leftOverSum]; ok {
-			res = max(res, i-val+1)
+			res = max(res, i-val)
 		}
 
 		if _, ok := prefSum[sum]; !ok {
