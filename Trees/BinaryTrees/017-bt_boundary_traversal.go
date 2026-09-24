@@ -4,6 +4,9 @@ import "fmt"
 
 /*
 Boundary Traversal
+- You move towards left and store results but at the point we reach the end, if we go to left then when left is nil we need to move right
+- while the same applies when you are moving from right also
+- For leaf nodes we can perform any operation either inorder, post or pre order
 */
 
 func leftTraversal(root *Node, result *[]int) {

@@ -2,6 +2,8 @@ package binarytrees
 
 /*
 Diameter
+- If we think about max depth, it gives either the max left or max right
+- But for diameter to be max we need to add these 2 and search for a max result
 */
 
 func diameterRecursive(root *Node, result *int) int {

@@ -4,6 +4,10 @@ import "slices"
 
 /*
 Vertical Order Traversal
+- We need to make something like a grid here.
+- If we move left then we need to make row + 1, col - 1 , if we move right row + 1, col + 1
+- At last we need to sort according to col and then next is row and print the results
+- For printing results, we need to follow this, I mean same col should be in the same array, we need to store and return
 */
 
 type NodeInfo struct {

@@ -8,7 +8,7 @@ func (sll *SingleLinkedList) DetectLoop() bool {
 	slow := sll.head
 	fast := sll.head
 
-	for fast != nil && fast.next.next != nil {
+	for fast != nil && fast.next != nil {
 		if fast == slow {
 			return true
 		}

@@ -4,6 +4,8 @@ import "fmt"
 
 /*
 Max path sum
+- This has to be the same thought as diameter, we can either choose left sum or right sum if it negative we don't choose at all
+- We calculate and return, we don't return the result, we only return the sum possible
 */
 
 func maxSum(root *Node, result *int) int {

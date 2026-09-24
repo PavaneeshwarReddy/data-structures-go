@@ -2,6 +2,12 @@ package binarytrees
 
 /*
 Find nodes at distance k from target node
+- We can get easily the child nodes but we won't get the parent nodes
+- To get that we need a map that marks the node -> parent node
+
+- After creating this map, there still an issue, there is a chance of visiting the same node again
+- So we need to check with the previous node, whether we can pickup left and right of the current node
+- Traverse until k == 0 then you can add to the result array
 */
 
 func mapChildParent(root *Node, pNode *Node, mp *map[*Node]*Node) {

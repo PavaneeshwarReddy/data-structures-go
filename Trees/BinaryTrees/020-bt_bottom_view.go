@@ -4,6 +4,7 @@ import "fmt"
 
 /*
 Bottom View
+- If we do any traveral and leaf nodes should be printed
 */
 
 func leafNodeTraversal(root *Node) {

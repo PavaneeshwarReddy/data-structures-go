@@ -3,7 +3,7 @@ package binarytrees
 /*
 
 Check 2 Trees are similar
-
+- If two nodes are nil at the same time we return true but if alternative is not nil one is nil than we can return false
 */
 
 func (bt *BinaryTree) CheckSimilarity(root1 *Node, root2 *Node) bool {

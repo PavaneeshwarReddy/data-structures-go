@@ -4,6 +4,13 @@ import "fmt"
 
 /*
 All traversal
+- To get the pre order first we need to always traverse first to the left
+- To get the inorder after popping we need to move to the right
+- For pre order its after all
+
+Preorder : visit count is 1 , if it visited first then we just print the value
+Inorder: visit count is 2, then that means it went through the node once while traversing left and comming back
+Postorder: visit count is 3, that means the same went on for 2 times we just pop the value out and add it to postorder
 */
 
 type StackNode struct {

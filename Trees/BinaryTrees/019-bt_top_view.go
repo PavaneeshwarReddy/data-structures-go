@@ -4,6 +4,7 @@ import "fmt"
 
 /*
 Top View
+- You just need to traverse to the left entirely and to the right entirely
 */
 
 func leftTreeTraversal(root *Node) {

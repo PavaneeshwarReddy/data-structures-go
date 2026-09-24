@@ -4,6 +4,9 @@ import "math"
 
 /*
 Balanced Tree
+- If depth at every point is not more than abs 1 then it is called balance
+- To do that for every node, we need right max and left max depth and calculate diff to get the final result
+- If found more than 1 then we can return false
 */
 
 func balancedTree(root *Node, result *bool) int {

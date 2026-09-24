@@ -2,8 +2,6 @@ package binarytrees
 
 /*
 Problem: Count total no of nodes
-link:
-Idea:
 - Simply perform any traversal and just add 1 to every recusive call
 */
 

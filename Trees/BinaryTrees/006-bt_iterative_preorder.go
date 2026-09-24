@@ -1,23 +1,24 @@
 package binarytrees
-import "fmt"
 
+import "fmt"
 
 /*
 Iterative Preorder Traversal
+- Same like popping of the stack
+- Top element always be our result, while pushing we need to do the right first so that while picking it comes at last ( root -> left -> right)
 */
-
 
 func (bt *BinaryTree) PreorderIterative() {
 	nodes := []*Node{bt.Root}
 
 	for len(nodes) > 0 {
 		topNode := nodes[len(nodes)-1]
-		nodes = nodes[0:len(nodes)-1]
+		nodes = nodes[0 : len(nodes)-1]
 
 		fmt.Print(topNode.value, " ")
 
 		if topNode.right != nil {
-			nodes = append(nodes,topNode.right)
+			nodes = append(nodes, topNode.right)
 		}
 		if topNode.left != nil {
 			nodes = append(nodes, topNode.left)
@@ -25,4 +26,3 @@ func (bt *BinaryTree) PreorderIterative() {
 	}
 	fmt.Println()
 }
-

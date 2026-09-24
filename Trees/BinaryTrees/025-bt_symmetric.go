@@ -2,6 +2,7 @@ package binarytrees
 
 /*
 Symmetric
+- We need to move the same way, if found any issues then return false
 */
 
 func symmetric(leftRoot *Node, rightRoot *Node) bool {
