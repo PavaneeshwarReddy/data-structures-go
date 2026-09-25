@@ -33,7 +33,7 @@ func DirectedCycle(n int, adj map[int][]int) bool {
 	vis := make([]bool, n)
 	inPath := make([]bool, n)
 
-	for i := 0; i < n; i++ {
+	for i := range n {
 		if !vis[i] {
 			if DetectCycle(i, adj, vis, inPath) {
 				return true

@@ -33,7 +33,7 @@ func recursiveInsert(trie *Trie, idx int, word string) {
 		}
 		trie.node[word[idx]-'a'] = &newTrie
 	}
-	recursiveInsert(trie.node[word[idx]-1], idx+1, word)
+	recursiveInsert(trie.node[word[idx]-'a'], idx+1, word)
 }
 
 func (this *Trie) Insert(word string) {

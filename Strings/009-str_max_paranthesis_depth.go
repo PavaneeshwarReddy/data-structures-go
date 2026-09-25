@@ -14,7 +14,7 @@ func MaxParanthesisDepth(s string) int {
 			currLen++
 		}
 		if v == ')' {
-			currLen++
+			currLen--
 		}
 		maxLen = max(maxLen, currLen)
 	}
